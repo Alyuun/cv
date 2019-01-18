@@ -1,0 +1,28 @@
+.color_txt {
+	color: #3f00ff;
+}
+
+.align_txt {
+	text-align: right;
+}
+
+@font-face {
+    font-family: 'opensans_police';
+    src: url('../police/opensans_police.eot');
+    src: url('../police/opensans_police.eot?#iefix') format('embedded-opentype'),
+         url('../police/opensans_police.woff') format('woff'),
+         url('../police/opensans_police.ttf') format('truetype'),
+         url('../police/opensans_police.svg#opensans_police') format('svg');
+}
+
+body {
+	background-image: url("img/background.jpg");
+	background-repeat: repeat-x;
+	font-family: 'opensans_police', Arial, serif;
+}
+
+ol {
+	border: outset;
+	text-shadow: 3px 3px #1500ff;
+}
+
