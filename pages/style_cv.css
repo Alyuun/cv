@@ -35,6 +35,7 @@
 
 body {
 	font-family: opensans_police, serif;
+	font-size: 125%;
 }
 
 h2 {
@@ -49,7 +50,7 @@ h2 {
 }
 
 #mon_experience, #ma_formation, #mes_competences {
-	padding : 5%;
+	padding : 6%;
 	}
 
 #mes_competences li {
@@ -59,7 +60,7 @@ h2 {
 #liseret {
 	background-color: #003a46;
 	height: 100px;
-	width: 6%;
+	width: 9%;
 	border: 1px solid #003a46;
 	border-radius: 8px;
 	display: inline-block;
