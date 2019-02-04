@@ -6,38 +6,28 @@
          url('../police/opensans_police.ttf') format('truetype'),
          url('../police/opensans_police.svg#opensans_police') format('svg');
 }
-/*
-.color_txt {
-	color: #3f00ff;
-}
 
-.align_txt {
-	text-align: right;
-}
-
-body {
-	background-image: url("img/background.jpg");
-	background-repeat: repeat-x;
-	font-family: 'opensans_police', Arial, serif;
-}
-
-ol {
-	border: outset;
-	text-shadow: 3px 3px #1500ff;
-}
-*/
-
-header {
-	text-align: center;
+#flex_parent {
+	display: flex;
 	font-family: opensans_police;
+	flex-direction: column;
 }
 
-header img {
+#flex_presentation {
+	align-self: center;
+}
+
+#flex_image {
+	position: absolute;
+	align-self: flex-end;
+	}
+
+#flex_image img {
 	border: 1px solid black;
 	box-shadow: 1px 1px teal;
 }
 
-header small {
+#flex_presentation small {
 	border-bottom-style: groove;
 	color: #003a46;
 	font-weight: bold;
@@ -47,40 +37,34 @@ body {
 	font-family: opensans_police, serif;
 }
 
+h2 {
+	/*text-align: center;*/
+	color: #003a46;
+}
+
 #body {
 	display: flex;
 	justify-content: space-between;
+	margin-left: 5.3%;
 }
 
-#mon_experience {
-	/*background-color: pink;*/
-	border: 5px double #003a46;
-	padding : 1%;
-	border-radius: 10px;
+#mon_experience, #ma_formation, #mes_competences {
+	padding : 5%;
+	}
+
+#mes_competences li {
+	list-style-type: none;
 }
 
-#mon_experience h2 {
-	text-align: center;
-}
-
-#mes_etudes {
-	/*background-color: red;*/
-	border: 5px double #003a46;
-	padding : 1%;
-	border-radius: 10px;
-}
-
-#mes_etudes h2 {
-	text-align: center;
-}
-
-#mes_competences {
-	background-color: green;
-	text-align: center;
-	border-radius: 10px;
-	padding : 1%;
-}
-
-#mes_ecompetences h2 {
-	text-align: center;
+#liseret {
+	background-color: #003a46;
+	height: 100px;
+	width: 6%;
+	border: 1px solid #003a46;
+	border-radius: 8px;
+	display: inline-block;
+	position: absolute;
+	margin-left: -0.7%;
+	padding-top: 70%;
+	margin-top: -22px;
 }
