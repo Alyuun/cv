@@ -1,4 +1,5 @@
-@font-face {
+@font-face 
+{
     font-family: 'opensans_police';
     src: url('../police/opensans_police.eot');
     src: url('../police/opensans_police.eot?#iefix') format('embedded-opentype'),
@@ -7,65 +8,88 @@
          url('../police/opensans_police.svg#opensans_police') format('svg');
 }
 
-#flex_parent {
+#flex_parent 
+{
 	display: flex;
 	font-family: opensans_police;
 	flex-direction: column;
 }
 
-#flex_presentation {
+#flex_presentation 
+{
 	align-self: center;
 }
 
-#flex_image {
+#flex_image 
+{
 	position: absolute;
 	align-self: flex-end;
 	}
 
-#flex_image img {
+#flex_image img 
+{
 	border: 1px solid black;
 	box-shadow: 1px 1px teal;
 }
 
-#flex_presentation small {
+#flex_presentation small 
+{
 	border-bottom-style: groove;
 	color: #003a46;
 	font-weight: bold;
 }
 
-body {
+body 
+{
 	font-family: opensans_police, serif;
 	font-size: 125%;
 }
 
-h2 {
-	/*text-align: center;*/
+h2 
+{
 	color: #003a46;
 }
 
-#body {
+#body 
+{
 	display: flex;
 	justify-content: space-between;
 	margin-left: 5.3%;
 }
 
-#mon_experience, #ma_formation, #mes_competences {
+section
+{
 	padding : 6%;
-	}
+}
 
-#mes_competences li {
+#mes_competences li 
+{
 	list-style-type: none;
 }
 
-#liseret {
+#liseret 
+{
+	display: inline-block;
+	position: fixed;
 	background-color: #003a46;
-	height: 100px;
+	height: 400px;
 	width: 9%;
 	border: 1px solid #003a46;
 	border-radius: 8px;
-	display: inline-block;
-	position: absolute;
 	margin-left: -0.7%;
 	padding-top: 70%;
 	margin-top: -22px;
+}
+
+@media all and (max-width: 1024px) 
+{
+	#liseret
+	{
+		display: none;
+	}
+
+	#body
+	{
+		flex-direction: column-reverse;
+	}
 }
